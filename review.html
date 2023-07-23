@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Twinkling Star</title>
+    <style>
+        .carousel-container {
+            width: 400px;
+            height: 200px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        
+        .carousel-text {
+            display: none;
+        }
+        
+        .active {
+            display: block;
+        }
+         .navbar-inverse .navbar-nav > li > a 
+        {
+            color: black;
+            font-weight: bold;
+        }
+    .navbar-inverse .navbar-nav > li > a:hover,
+    .navbar-inverse .navbar-nav > li > a:focus 
+        {
+            background-color:goldenrod;
+            color: maroon; 
+        }
+    #list-item
+        {
+            overflow-y: auto;
+            max-height: 200px;
+        }
+
+    body{background-color: whitesmoke;}
+    .T1
+        {
+            width: 100%;
+            height: 50px;
+            background-color: maroon;
+            margin-top: 0px;
+        }
+    .T2
+        {
+            width: 100%;
+            height: 30px;
+            margin-top: 0px;
+        }
+    .T3
+        {
+            width: 100%;
+            height: 50px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    .T5
+        {
+            width: 40%;
+            height: 200px;
+            float: left;}
+    .T4
+        {
+            width: 100%;
+            height: 400px;
+            margin-top: 600px;
+        }
+        
+    .T9
+        {
+            width: 100%;
+            height: 300px;
+            background-color: maroon;
+        }
+    .registerbtn 
+        {
+           background-color: maroon;
+           color: white; 
+           border: none;
+           border-radius: 70px;
+           cursor: pointer;
+           width: 40%;
+           opacity: 0.9;
+        }
+    .anyClass
+        {
+            height:250px;
+            margin-top: 27px;
+            margin-left: 10px;
+            width: 1050px;
+            overflow-y: scroll;
+        }
+    .registerbtn:hover 
+        {
+           opacity: 1;
+        }
+    .whatsapp-float 
+        {
+            position: fixed;
+            right: 20px;
+            bottom: 20px; 
+            z-index: 9999;
+        }
+    .dropdown:hover .dropdown-menu{display: block;}
+    #news-events-container 
+        {
+            overflow: hidden;
+            height: 400px;
+            width: 1000px;
+            margin-left: 203px;
+        }
+    #news-events-list 
+        {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            animation: scroll-news 55s infinite;
+        }
+    #news-events-list li 
+        {
+            padding: 10px 0;
+        }
+    #news-events-list li:after 
+        {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-bottom: 1px solid #ccc; 
+        }
+    #news-events-list li:not(:last-child) 
+        {
+            border-bottom: 1px solid #ccc; 
+        }
+    #news-events-list li span.event-name 
+        {
+            color: black;
+            font-family: georgia;
+            font-weight: bold;
+        }
+    @keyframes scroll-news
+        {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-50%); }
+        }
+    #news-events-list li .new-label 
+        {
+          position: absolute;
+          top: 0;
+          right: 80px;
+          padding: 2px 5px;
+          background-color: red;
+          color: white;
+          font-weight: bold;
+          animation: blink 1s infinite;
+        }
+
+    @keyframes blink 
+        {
+          0% { opacity: 1; }
+          50% { opacity: 0; }
+          100% { opacity: 1; }
+        }
+    .call-button 
+        {
+          position: fixed;
+          bottom: 90px;
+          right: 25px;
+          z-index: 9999;
+        }
+  .social-icons 
+        {
+            text-align: center;
+            margin-top: -100px;
+        }
+
+    .social-icons a 
+        {
+            color: white;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+     <a href="tel:+919352811478" class="call-button" style="color: black; background-color:transparent;">
+        <img src="image/w3.png" alt="Call Us" width="50" height="50">
+    </a>
+    <a href="https://api.whatsapp.com/send?phone=9352811478" class="whatsapp-float">
+        <img src="image/wp2.png" alt="WhatsApp" width="70" height="70">
+    </a> 
+    <div class="top">
+        <div class="T1">
+            <div class="container">
+                <div class="row">
+                    <div class="collapse navbar-collapse" id="myNavbar" >
+                        <ul class="nav navbar-nav"> 
+                            <li>
+                                <a href="https://www.instagram.com/rashmiagarwal892/" style="margin-left: -70px; color: whitesmoke; background-color: transparent;">
+                                    <i class="fab fa-instagram">                                        
+                                    </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://api.whatsapp.com/send?phone=9352811478" style="margin-left:-45px;color: whitesmoke; background-color: transparent;">
+                                    <i class="fab fa-whatsapp">    
+                                    </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://m.facebook.com/profile.php?id=100052034466261"style="margin-left: -20px;color: whitesmoke; background-color: transparent;">
+                                    <i class="fab fa-facebook">
+                                    </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/@rashmiagarwal1390" style="margin-left:-20px;color: whitesmoke; background-color: transparent;">
+                                    <i class="fab fa-youtube">                                    
+                                    </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+919352811478"style="margin-left: -20px;color: whitesmoke; background-color:transparent;">
+                                    <i class="fas fa-phone">                                        
+                                    </i>
+                                </a>
+                            </li>
+
+                      </ul>
+                    <div class="col-sm-4" style="position: relative;color: white; font-size: 20px; margin-top: 10px; margin-left: 400px; letter-spacing: 3px; font-family: georgia;">Twinkling Star
+                    </div>
+                    <div class="tp" style="margin-left: 900px; margin-top: 15px; font-size: 15px; font-style: italic; color:white;">For Our LIVE Online Classes
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="T2" >
+        <nav class="navbar navbar-inverse" style="background-color:darkgoldenrod; border-radius: 0px; border-color:goldenrod;">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="myNavbar" >
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle"  href="index.html">Home
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Results
+                                <span class="caret">                                    
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">2023-24</a></li>
+                                <li><a href="#">2022-23</a></li>
+                                <li><a href="#">2021-22</a></li>
+                                <li><a href="#">2020-21</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle"  href="gallery.html">Gallery
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" >Review
+                            </a> 
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Youtube Videos
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Class 9</a></li>
+                                <li><a href="#">Class 10</a></li>
+                                <li><a href="#">Class 11</a></li>
+                                <li><a href="#">Class 12</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle"  href="resources.html">Free Resources
+                            </a>                  
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                       
+                        <li><a href="loginn.html"><span class="glyphicon glyphicon-log-in"></span> ERP Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="T3" style="height: 50px;">
+        <nav class="navbar navbar-inverse" style="background-color:darkgoldenrod;border-radius: 0px; border-color:#ccc;">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle"  href="contact.html">Contact Us
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle"  href="courses.html" >Courses & Fee
+                        
+                            </a>
+                           
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle"  href="https://forms.gle/k7mUm2Sqf7rPmTMa6">Admission
+                            </a>       
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="loginn.html">Fee Deposit
+                            </a>       
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <h1 style="color:maroon;text-align: center;font-family: georgia;">Parent Testimonials</h1>
+     <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>   
+        </ol>
+        <div class="carousel-inner" style="height:300px; text-align:center;">
+            <div class="item active">
+                 <p class="carousel-text active" style="margin-top:150px;font-family: georgia;color: maroon;font-style: italic;font-size: 30px;">Testimonial 1</p>
+            </div>
+            <div class="item">
+                <p class="carousel-text active" style="margin-top:150px;font-family: georgia;color: maroon;font-style: italic;font-size: 30px;">Testimonial 2</p>
+            </div>
+            <div class="item">
+                <p class="carousel-text active" style="margin-top:150px;font-family: georgia;color: maroon;font-style: italic;font-size: 30px;">Testimonial 3</p>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="color:whitesmoke;">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+     <div class="T9" style="position:relative; margin-top:130px;">
+        <div class="T10">
+            <div class="container-fluid">
+                <div class="row">
+                    <h1 style="color:white; font-family:georgia; text-align: center;">Twinkling Star<br>For our live online classes<br>
+                    </h1>
+                    <h1 style="color:white;font-size: 25px; margin-left:30px; font-weight:bold;font-family: georgia;margin-top: 30px;">Contact Us :</h1>
+                    <h2 style="color:white;font-size: 15px; margin-left:30px; margin-top:13px">
+                    Twinkling Star Coaching Institute</h2>
+                    <h3 style="font-family: georgia; font-weight: bold; font-size: 17px; color:white; margin-left: 30px;">Admission Enquiry:</h3>
+                    <h4 style="color:white;font-size: 15px; margin-left:30px; margin-top:13px">+91-9352811478<br>rashmiagarwal892@gmail.com</h4>
+                    <h5 style="font-family: georgia; font-weight: bold; font-size: 25px; color:white; margin-left: 1100px; margin-top: -150px;">Quick Links:
+                        <ul style="list-style-type: none; margin-left: -30px;">
+                            <li class="active"> <a href="https://forms.gle/k7mUm2Sqf7rPmTMa6" style="color:whitesmoke; margin-left: 0px; font-size:17px">Admission Form</a></li>
+                            <li class="active"> <a href="award.html" style="color:whitesmoke; margin-top: 20px; margin-left: 0px; font-size: 17px;"> Events</a></li>
+                            <li class="active"> <a href="https://www.youtube.com/@rashmiagarwal1390" style="color:whitesmoke; margin-left: 0px; font-size: 17px;"> Youtube</a></li>
+                            <li class="active"> <a href="review.html" style="color:whitesmoke; margin-left: 0px; font-size:17px"> Review</a></li>
+                        </ul>
+                    </h5>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/rashmiagarwal892/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=9352811478" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://m.facebook.com/profile.php?id=100052034466261" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@rashmiagarwal1390" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="tel:your-phone-number"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 74px;">
+        </div>
+    </div>
+</body>
+</html>
